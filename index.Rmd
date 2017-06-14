@@ -1,0 +1,157 @@
+---
+title: "R packages as a reproducible framework for lake and cyanobacteria research"
+author: "Jeff Hollister"
+date: |
+  | 2017-06-21
+  | EPA R User Group Meeting
+output:
+  xaringan::moon_reader:
+    css: ["default", "custom.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+---
+class: center, middle, inverse
+
+```{r setup, include=FALSE, message=FALSE}
+options(htmltools.dir.version = FALSE)
+library(mapview)
+library(lakemorpho)
+library(elevatr)
+data(lake)
+data(pt_df)
+```
+
+class: center, middle, inverse
+
+# Who, what, why, and how?
+
+<!--#########################################################################-->
+---
+
+# Who are we?
+
+.left-column[
+- Ecologists 
+- Computational focus
+  - Enough to be dangerous
+- 3 FTE
+  - Myself
+  - Betty Kreakie
+  - Bryan Milstead
+- 2 Post-docs
+  - Farnaz Nojavan
+  - Stephen Shivers
+]
+
+.right-column[
+<img src="figure/comp_eco_crew.jpg" style="margin-left: 75px"></img>
+]
+
+<!--#########################################################################-->
+---
+
+# What do we do? 
+
+- Apply computational approaches to understand water quality impacts in lakes
+  - Modelling (Not this talk!, but see Farnaz's talk)
+- Open Science
+
+
+![The workflow](figure/cyano_model_function.jpg)
+
+
+---
+class: middle, center, inverse
+
+# R package development
+
+<!--#########################################################################-->
+---
+
+# `lakemorpho`
+
+.footnote[Package URL: <https://cran.r-project.org/package=lakemorpho>]
+
+.left-column[
+- Lake morphometry metrics in R
+- Version 1.0 
+  - August 2014
+- Version 1.1.0 
+  - December 2016
+- [National Lake Morphometry](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B495CBAED-9BB9-49B4-80A7-1C91DE5FCA95%7D)
+- [Hollister and Milstead (2010)](http://dx.doi.org/10.1080/07438141.2010.504321)
+- [Hollister *et. al.* (2011)](http://dx.doi.org/10.1371/journal.pone.0025764)
+]
+
+.right-column[
+```{r, echo=FALSE, message = FALSE}
+set.seed(1)
+library(lakemorpho)
+data(lakes)
+plot(inputLM)
+```
+]
+
+
+<!--#########################################################################-->
+---
+class: center, middle
+background-image: url('figure/lakemorpho_demo.png')
+background-position: 50% 50%
+
+# [lakemorpho: Demo](http://server.jwhollister.com:8787)
+
+
+<!--#########################################################################-->
+---
+
+# `elevatr`
+
+.footnote[Package URL: <https://cran.r-project.org/package=elevatr>]
+
+.left-column[
+- Access elevation data in R
+  - Mapzen
+  - AWS
+  - USGS
+- Version 0.1.1 
+  - January 2017
+- Version 0.1.3 
+  - March 2017
+- Will be paired with `lakemorpho`
+]
+
+.right-column[
+```{r, echo=FALSE, message = FALSE, cache = TRUE}
+set.seed(1)
+raster::plot(get_elev_raster(lake,z = 12))
+```
+]
+
+<!--#########################################################################-->
+---
+class: center, middle
+background-image: url('figure/elevatr_demo.png')
+background-position: 50% 50%
+
+# [elevatr: Demo](http://server.jwhollister.com:8787)
+
+---
+
+# Thanks!
+.center[
+## Jeff Hollister
+US EPA </br>
+Atlantic Ecology Division </br>
+Narragansett, RI </br>
+email: [hollister.jeff@epa.gov](mailto:hollister.jeff@epa.gov) </br>
+twitter: [@jhollist](https://twitter.com/jhollist) </br>
+github: [jhollist](https://github.com/jhollist) </br>
+
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+]
+
