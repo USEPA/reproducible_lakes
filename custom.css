@@ -1,5 +1,7 @@
 /* some custom css for slides
 
+
+/* from: https://github.com/gnab/remark/issues/50#issuecomment-223887379 */
 /* Two-column layout */
       .left-column {
         width: 40%;

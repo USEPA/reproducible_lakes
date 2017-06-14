@@ -31,6 +31,7 @@ class: center, middle, inverse
 <!--#########################################################################-->
 ---
 
+
 # Who are we?
 
 .left-column[
@@ -57,18 +58,36 @@ class: center, middle, inverse
 
 - Apply computational approaches to understand water quality impacts in lakes
   - Modelling (Not this talk!, but see Farnaz's talk)
-- Open Science
-
-
-![The workflow](figure/cyano_model_function.jpg)
-
+- Open # Packages
 
 ---
-class: middle, center, inverse
 
-# R package development
+# Why Packages
 
-<!--#########################################################################-->
+- structure
+- GitHub
+- CRAN
+- Details on this next month from Karen Blocksum
+
+---
+# Research Compendia
+
+- R, Data, and Vignettes folders
+- Define
+- Ropensci
+  - https://github.com/ropensci/rrrpkg
+  - https://github.com/ropensci/unconf17/issues/5
+- Our examples
+     - https://github.com/usepa/LakeTrophicModelling
+     - https://github.com/usepa/Microcystinchla)
+- Final home is GitHub and Zenodo
+
+---
+
+# Packages that support our research
+  - `lakemorpho`
+  - `elevatr`
+  - lakescape (in development)
 ---
 
 # `lakemorpho`
@@ -81,9 +100,11 @@ class: middle, center, inverse
   - August 2014
 - Version 1.1.0 
   - December 2016
+- `sf` support to be added
 - [National Lake Morphometry](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B495CBAED-9BB9-49B4-80A7-1C91DE5FCA95%7D)
 - [Hollister and Milstead (2010)](http://dx.doi.org/10.1080/07438141.2010.504321)
 - [Hollister *et. al.* (2011)](http://dx.doi.org/10.1371/journal.pone.0025764)
+- [Hollister and Stachelek (In Review)]
 ]
 
 .right-column[
@@ -122,6 +143,7 @@ background-position: 50% 50%
 - Version 0.1.3 
   - March 2017
 - Will be paired with `lakemorpho`
+- `sf` support to be added
 ]
 
 .right-column[
@@ -139,6 +161,8 @@ background-position: 50% 50%
 
 # [elevatr: Demo](http://server.jwhollister.com:8787)
 
+
+
 ---
 
 # Thanks!
@@ -154,4 +178,5 @@ github: [jhollist](https://github.com/jhollist) </br>
 
 Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
 ]
+
 
