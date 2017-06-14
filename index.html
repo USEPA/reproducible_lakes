@@ -13,8 +13,8 @@ class: center, middle, inverse, title-slide
 
 # R packages as a reproducible framework for lake and cyanobacteria research
 ### Jeff Hollister
-### <p>2017-06-21<br />
-EPA R User Group Meeting</p>
+### <div style="white-space: pre-line;">2017-06-21
+EPA R User Group Meeting</div>
 
 ---
 
@@ -26,8 +26,9 @@ class: center, middle, inverse
 
 # Who, what, why, and how?
 
-&lt;!--#########################################################################--&gt;
+
 ---
+
 
 # Who are we?
 
@@ -48,25 +49,43 @@ class: center, middle, inverse
 &lt;img src="figure/comp_eco_crew.jpg" style="margin-left: 75px"&gt;&lt;/img&gt;
 ]
 
-&lt;!--#########################################################################--&gt;
+
 ---
 
 # What do we do? 
 
 - Apply computational approaches to understand water quality impacts in lakes
   - Modelling (Not this talk!, but see Farnaz's talk)
-- Open Science
-
-
-![The workflow](figure/cyano_model_function.jpg)
-
+- Open # Packages
 
 ---
-class: middle, center, inverse
 
-# R package development
+# Why Packages
 
-&lt;!--#########################################################################--&gt;
+- structure
+- GitHub
+- CRAN
+- Details on this next month from Karen Blocksum
+
+---
+# Research Compendia
+
+- R, Data, and Vignettes folders
+- Define
+- Ropensci
+  - https://github.com/ropensci/rrrpkg
+  - https://github.com/ropensci/unconf17/issues/5
+- Our examples
+     - https://github.com/usepa/LakeTrophicModelling
+     - https://github.com/usepa/Microcystinchla)
+- Final home is GitHub and Zenodo
+
+---
+
+# Packages that support our research
+  - `lakemorpho`
+  - `elevatr`
+  - lakescape (in development)
 ---
 
 # `lakemorpho`
@@ -79,9 +98,11 @@ class: middle, center, inverse
   - August 2014
 - Version 1.1.0 
   - December 2016
+- `sf` support to be added
 - [National Lake Morphometry](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B495CBAED-9BB9-49B4-80A7-1C91DE5FCA95%7D)
 - [Hollister and Milstead (2010)](http://dx.doi.org/10.1080/07438141.2010.504321)
 - [Hollister *et. al.* (2011)](http://dx.doi.org/10.1371/journal.pone.0025764)
+- [Hollister and Stachelek (In Review)]()
 ]
 
 .right-column[
@@ -89,7 +110,7 @@ class: middle, center, inverse
 ]
 
 
-&lt;!--#########################################################################--&gt;
+
 ---
 class: center, middle
 background-image: url('figure/lakemorpho_demo.png')
@@ -98,7 +119,7 @@ background-position: 50% 50%
 # [lakemorpho: Demo](http://server.jwhollister.com:8787)
 
 
-&lt;!--#########################################################################--&gt;
+
 ---
 
 # `elevatr`
@@ -115,19 +136,33 @@ background-position: 50% 50%
 - Version 0.1.3 
   - March 2017
 - Will be paired with `lakemorpho`
+- `sf` support to be added
 ]
 
 .right-column[
 ![](index_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
 ]
 
-&lt;!--#########################################################################--&gt;
+
 ---
 class: center, middle
 background-image: url('figure/elevatr_demo.png')
 background-position: 50% 50%
 
 # [elevatr: Demo](http://server.jwhollister.com:8787)
+
+---
+
+# `lakescape`
+
+- New effort with Bryan Milstead
+- Summarizes ancillary data for land area around lake
+  - Census (via `censusapi`)
+  - Landscover
+  - Impervious
+- Accepts arbitrary spatial data for "lakescape"
+- Based on `sf` and tidy by design
+- &lt;https://github.com/willbmisled/lakescape&gt;
 
 ---
 
@@ -151,7 +186,7 @@ Slides created via the R package [**xaringan**](https://github.com/yihui/xaringa
 "highlightLines": true,
 "countIncrementalSlides": true
 });
-if (window.HTMLWidgets) slideshow.on('showSlide', function (slide) {setTimeout(function() {window.dispatchEvent(new Event('resize'));}, 100)});</script>
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {window.dispatchEvent(new Event('resize'));});</script>
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -165,7 +200,7 @@ MathJax.Hub.Config({
 (function () {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src  = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
   if (location.protocol !== 'file:' && /^https?:/.test(script.src))
     script.src  = script.src.replace(/^https?:/, '');
   document.getElementsByTagName('head')[0].appendChild(script);
