@@ -26,8 +26,7 @@ data(pt_df)
 
 class: center, middle, inverse
 
-# Who, what, why, and how?
-
+# Who and what?
 
 ---
 
@@ -51,23 +50,31 @@ class: center, middle, inverse
 <img src="figure/comp_eco_crew.jpg" style="margin-left: 75px"></img>
 ]
 
-
 ---
 
 # What do we do? 
 
 - Apply computational approaches to understand water quality impacts in lakes
-  - Modelling (Not this talk!, but see Farnaz's talk)
-- Open # Packages
+  - Modelling 
+  - Open Data
+  - New tooling
+- SSWR 4.01C: 
 
 ---
+class: center, middle, inverse
 
+# Packages
+
+---
 # Why Packages
 
-- structure
-- GitHub
-- CRAN
-- Details on this next month from Karen Blocksum
+- Useful structure
+- Infrastrcutre for sharing
+  - GitHub
+  - CRAN
+- We are an R shop!
+
+**note: Details on creating packages next month from Karen Blocksum**
 
 ---
 # Research Compendia
@@ -87,7 +94,7 @@ class: center, middle, inverse
 # Packages that support our research
   - `lakemorpho`
   - `elevatr`
-  - lakescape (in development)
+  - `lakescape` (in development)
 ---
 
 # `lakemorpho`
