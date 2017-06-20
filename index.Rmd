@@ -17,7 +17,6 @@ class: center, middle, inverse
 
 ```{r setup, include=FALSE, message=FALSE}
 options(htmltools.dir.version = FALSE)
-library(mapview)
 library(lakemorpho)
 library(elevatr)
 data(lake)
@@ -79,18 +78,26 @@ class: center, middle, inverse
 ---
 # Research Compendia
 
-- R, Data, and Vignettes folders
 - Define
-- Ropensci
+- Origins
+  - Gentleman, Robert and Temple Lang, Duncan, "Statistical Analyses and Reproducible Research" (May 2004). Bioconductor Project Working Papers. Working Paper 2. http://biostats.bepress.com/bioconductor/paper2
+- Part of
+  - Reproducible Research
+  - Literate Programming
+- Ropensci efforts
   - https://github.com/ropensci/rrrpkg
   - https://github.com/ropensci/unconf17/issues/5
+
+---
+# Packages as Research Compendia
+- R, Data, and Vignettes folders
+- Other examples
 - Our examples
      - https://github.com/usepa/LakeTrophicModelling
      - https://github.com/usepa/Microcystinchla)
-- Final home is GitHub and Zenodo
+- GitHub and Zenodo (Archive)
 
 ---
-
 # Packages that support our research
   - `lakemorpho`
   - `elevatr`
