@@ -78,7 +78,7 @@ class: center, middle, inverse
 ---
 # Research Compendia
 
-- Define
+.left-column[
 - Origins
   - Gentleman, Robert and Temple Lang, Duncan, "Statistical Analyses and Reproducible Research" (May 2004). Bioconductor Project Working Papers. Working Paper 2. http://biostats.bepress.com/bioconductor/paper2
 - Part of
@@ -87,6 +87,14 @@ class: center, middle, inverse
 - Ropensci efforts
   - https://github.com/ropensci/rrrpkg
   - https://github.com/ropensci/unconf17/issues/5
+]
+
+.right-column[
+
+![gl_figure](g_l_figure.jpg)
+
+** from Gentleman and Lang (2004) **
+]
 
 ---
 # Packages as Research Compendia
