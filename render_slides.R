@@ -1,5 +1,5 @@
-rmarkdown::render("index.Rmd")
 system("git checkout gh-pages")
+rmarkdown::render("index.Rmd")
 system("git add index.html")
 system("git commit -m 'fresh render on index.html'")
 system("git push origin gh-pages")
