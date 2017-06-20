@@ -97,11 +97,14 @@ class: center, middle, inverse
      - https://github.com/usepa/Microcystinchla)
 - GitHub and Zenodo (Archive)
 
+![ghz](ghz.jpg)
 ---
-# Packages that support our research
+# Packages to solve common problems
   - `lakemorpho`
   - `elevatr`
   - `lakescape` (in development)
+  
+<img src="https://media3.giphy.com/media/ID4NXWnwuLnLq/200.webp#0-grid1" style="width: 80%; height: 80%; margin-left: 10%;"></img>
 ---
 
 # `lakemorpho`
