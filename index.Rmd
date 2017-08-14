@@ -95,9 +95,9 @@ class: center, middle, inverse
 
 .right-column[
 
-              ![glfig](http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png)
+<img src="http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png" style="margin-left: 75px"></img>
 
-image credit: Nüst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
+from Nüst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
 ]
 
 ---
