@@ -78,6 +78,8 @@ class: center, middle, inverse
 - We are an R shop!
 
 
+![why](https://media.giphy.com/media/l2JhtKtDWYNKdRpoA/giphy.gif)
+
 ---
 # Research Compendia
 
@@ -136,7 +138,7 @@ from Nüst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
 - [National Lake Morphometry](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B495CBAED-9BB9-49B4-80A7-1C91DE5FCA95%7D)
 - [Hollister and Milstead (2010)](http://dx.doi.org/10.1080/07438141.2010.504321)
 - [Hollister *et. al.* (2011)](http://dx.doi.org/10.1371/journal.pone.0025764)
-- [Hollister and Stachelek (In Review)]()
+- [Hollister and Stachelek (To Be Submitted)](https://github.com/usepa/lakemorpho_manuscript)
 ]
 
 .right-column[
@@ -154,6 +156,8 @@ plot(inputLM)
 class: center, middle
 background-image: url('figure/lakemorpho_demo.png')
 background-position: 50% 50%
+
+# lakemorpho:: Demo
 
 <!-- # [lakemorpho: Demo](http://server.jwhollister.com:8787) -->
 
@@ -189,6 +193,8 @@ raster::plot(get_elev_raster(lake,z = 12))
 class: center, middle
 background-image: url('figure/elevatr_demo.png')
 background-position: 50% 50%
+
+# elevatr::Demo
 
 <!-- # [elevatr: Demo](http://server.jwhollister.com:8787) -->
 
