@@ -156,7 +156,7 @@ class: center, middle
 background-image: url('figure/lakemorpho_demo.png')
 background-position: 50% 50%
 
-# lakemorpho:: Demo
+# lakemorpho::demo
 
 <!-- # [lakemorpho: Demo](http://server.jwhollister.com:8787) -->
 
@@ -193,7 +193,7 @@ class: center, middle
 background-image: url('figure/elevatr_demo.png')
 background-position: 50% 50%
 
-# elevatr::Demo
+# elevatr::demo
 
 <!-- # [elevatr: Demo](http://server.jwhollister.com:8787) -->
 
