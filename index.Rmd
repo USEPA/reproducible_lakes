@@ -12,6 +12,8 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: true
+editor_options: 
+  chunk_output_type: console
 ---
 class: center, middle, inverse
 
@@ -28,7 +30,6 @@ class: center, middle, inverse
 # Who and what?
 
 ---
-
 
 # Who are we?
 
@@ -59,6 +60,8 @@ class: center, middle, inverse
   - New tooling
 - SSWR 4.01C: A Data Intensive Investigation of Temperature Impacts and Bloom Modelling
 
+![function](figure/cyano_model_function.jpg)
+
 ---
 class: center, middle, inverse
 
@@ -72,8 +75,6 @@ class: center, middle, inverse
   - GitHub
   - CRAN
 - We are an R shop!
-
-**note: Details on creating packages next month from Karen Blocksum**
 
 ---
 # Research Compendia
@@ -91,7 +92,9 @@ class: center, middle, inverse
 ]
 
 .right-column[
-![glfig](g_l_figure.jpg)
+![glfig](http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png)
+
+image credit: N&Uumlst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
 ]
 ---
 # Packages as Research Compendia
