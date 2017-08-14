@@ -67,7 +67,15 @@ class: center, middle, inverse
 
 # Packages
 
+=======
+
 ---
+class: center, middle, inverse
+
+# Packages
+
+---
+
 # Why Packages
 
 - Useful structure
@@ -92,11 +100,14 @@ class: center, middle, inverse
 ]
 
 .right-column[
+
 ![glfig](http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png)
 
 image credit: N&Uumlst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
 ]
+
 ---
+
 # Packages as Research Compendia
 - R, Data, and Vignettes folders
 - Other examples
@@ -106,7 +117,9 @@ image credit: N&Uumlst, Konkol, et al (2017), https://doi.org/10.1045/january201
 - GitHub and Zenodo (Archive)
 
 ![ghz](ghz.jpg)
+
 ---
+
 # Packages to solve common problems
   - `lakemorpho`
   - `elevatr`
@@ -148,8 +161,7 @@ class: center, middle
 background-image: url('figure/lakemorpho_demo.png')
 background-position: 50% 50%
 
-# [lakemorpho: Demo](http://server.jwhollister.com:8787)
-
+<!-- # [lakemorpho: Demo](http://server.jwhollister.com:8787) -->
 
 
 ---
@@ -184,7 +196,7 @@ class: center, middle
 background-image: url('figure/elevatr_demo.png')
 background-position: 50% 50%
 
-# [elevatr: Demo](http://server.jwhollister.com:8787)
+<!-- # [elevatr: Demo](http://server.jwhollister.com:8787) -->
 
 ---
 
