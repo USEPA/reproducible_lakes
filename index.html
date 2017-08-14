@@ -24,11 +24,9 @@ class: center, middle, inverse
 
 class: center, middle, inverse
 
-# Who, what, why, and how?
+# Who and what?
 
-&lt;!--#########################################################################--&gt;
 ---
-
 
 # Who are we?
 
@@ -49,43 +47,82 @@ class: center, middle, inverse
 &lt;img src="figure/comp_eco_crew.jpg" style="margin-left: 75px"&gt;&lt;/img&gt;
 ]
 
-&lt;!--#########################################################################--&gt;
 ---
 
 # What do we do? 
 
 - Apply computational approaches to understand water quality impacts in lakes
-  - Modelling (Not this talk!, but see Farnaz's talk)
-- Open # Packages
+  - Modelling 
+  - Open Data
+  - New tooling
+- SSWR 4.01C: A Data Intensive Investigation of Temperature Impacts and Bloom Modelling
+
+![function](figure/cyano_model_function.jpg)
+
+---
+class: center, middle, inverse
+
+# Packages
+
+=======
+
+---
+class: center, middle, inverse
+
+# Packages
 
 ---
 
 # Why Packages
 
-- structure
-- GitHub
-- CRAN
-- Details on this next month from Karen Blocksum
+- Useful structure
+- Infrastrcutre for sharing
+  - GitHub
+  - CRAN
+- We are an R shop!
 
 ---
 # Research Compendia
 
-- R, Data, and Vignettes folders
+.left-column[
 - Define
-- Ropensci
-  - https://github.com/ropensci/rrrpkg
-  - https://github.com/ropensci/unconf17/issues/5
-- Our examples
-     - https://github.com/usepa/LakeTrophicModelling
-     - https://github.com/usepa/Microcystinchla)
-- Final home is GitHub and Zenodo
+- Origins
+  - [Gentleman and Lang (2004)](http://biostats.bepress.com/bioconductor/paper2)
+- Part of
+  - Reproducible Research
+  - Literate Programming
+- ROpenSci efforts
+  - [rrrpkg](https://github.com/ropensci/rrrpkg)
+  - [ROpenSci unconf 2017 discussion](https://github.com/ropensci/unconf17/issues/5)
+]
+
+.right-column[
+
+![glfig](http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png)
+
+image credit: N&amp;Uumlst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
+]
 
 ---
 
-# Packages that support our research
+# Packages as Research Compendia
+- R, Data, and Vignettes folders
+- Other examples
+- Our examples
+     - https://github.com/usepa/LakeTrophicModelling
+     - https://github.com/usepa/Microcystinchla)
+- GitHub and Zenodo (Archive)
+
+![ghz](ghz.jpg)
+
+---
+
+# Packages to solve common problems
   - `lakemorpho`
   - `elevatr`
-  - lakescape (in development)
+  - `lakescape` (in development)
+  
+&lt;img src="https://media3.giphy.com/media/ID4NXWnwuLnLq/200.webp#0-grid1" style="width: 80%; height: 80%; margin-left: 10%;"&gt;&lt;/img&gt;
 ---
 
 # `lakemorpho`
@@ -102,7 +139,7 @@ class: center, middle, inverse
 - [National Lake Morphometry](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B495CBAED-9BB9-49B4-80A7-1C91DE5FCA95%7D)
 - [Hollister and Milstead (2010)](http://dx.doi.org/10.1080/07438141.2010.504321)
 - [Hollister *et. al.* (2011)](http://dx.doi.org/10.1371/journal.pone.0025764)
-- [Hollister and Stachelek (In Review)]
+- [Hollister and Stachelek (In Review)]()
 ]
 
 .right-column[
@@ -110,16 +147,15 @@ class: center, middle, inverse
 ]
 
 
-&lt;!--#########################################################################--&gt;
+
 ---
 class: center, middle
 background-image: url('figure/lakemorpho_demo.png')
 background-position: 50% 50%
 
-# [lakemorpho: Demo](http://server.jwhollister.com:8787)
+&lt;!-- # [lakemorpho: Demo](http://server.jwhollister.com:8787) --&gt;
 
 
-&lt;!--#########################################################################--&gt;
 ---
 
 # `elevatr`
@@ -143,15 +179,26 @@ background-position: 50% 50%
 ![](index_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
 ]
 
-&lt;!--#########################################################################--&gt;
+
 ---
 class: center, middle
 background-image: url('figure/elevatr_demo.png')
 background-position: 50% 50%
 
-# [elevatr: Demo](http://server.jwhollister.com:8787)
+&lt;!-- # [elevatr: Demo](http://server.jwhollister.com:8787) --&gt;
 
+---
 
+# `lakescape`
+
+- New effort with Bryan Milstead
+- Summarizes ancillary data for land area around lake
+  - Census (via `censusapi`)
+  - Landscover
+  - Impervious
+- Accepts arbitrary spatial data for "lakescape"
+- Based on `sf` and tidy by design
+- &lt;https://github.com/willbmisled/lakescape&gt;
 
 ---
 
