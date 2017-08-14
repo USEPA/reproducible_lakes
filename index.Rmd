@@ -12,13 +12,12 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: true
-editor_options: 
-  chunk_output_type: console
 ---
 class: center, middle, inverse
 
 ```{r setup, include=FALSE, message=FALSE}
 options(htmltools.dir.version = FALSE)
+library(mapview)
 library(lakemorpho)
 library(elevatr)
 data(lake)
@@ -27,9 +26,11 @@ data(pt_df)
 
 class: center, middle, inverse
 
-# Who and what?
+# Who, what, why, and how?
 
+<!--#########################################################################-->
 ---
+
 
 # Who are we?
 
@@ -50,82 +51,43 @@ class: center, middle, inverse
 <img src="figure/comp_eco_crew.jpg" style="margin-left: 75px"></img>
 ]
 
+<!--#########################################################################-->
 ---
 
 # What do we do? 
 
 - Apply computational approaches to understand water quality impacts in lakes
-  - Modelling 
-  - Open Data
-  - New tooling
-- SSWR 4.01C: A Data Intensive Investigation of Temperature Impacts and Bloom Modelling
-
-![function](figure/cyano_model_function.jpg)
-
----
-class: center, middle, inverse
-
-# Packages
-
-=======
-
----
-class: center, middle, inverse
-
-# Packages
+  - Modelling (Not this talk!, but see Farnaz's talk)
+- Open # Packages
 
 ---
 
 # Why Packages
 
-- Useful structure
-- Infrastrcutre for sharing
-  - GitHub
-  - CRAN
-- We are an R shop!
+- structure
+- GitHub
+- CRAN
+- Details on this next month from Karen Blocksum
 
 ---
 # Research Compendia
 
-.left-column[
-- Define
-- Origins
-  - [Gentleman and Lang (2004)](http://biostats.bepress.com/bioconductor/paper2)
-- Part of
-  - Reproducible Research
-  - Literate Programming
-- ROpenSci efforts
-  - [rrrpkg](https://github.com/ropensci/rrrpkg)
-  - [ROpenSci unconf 2017 discussion](https://github.com/ropensci/unconf17/issues/5)
-]
-
-.right-column[
-
-![glfig](http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png)
-
-image credit: N&Uumlst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
-]
-
----
-
-# Packages as Research Compendia
 - R, Data, and Vignettes folders
-- Other examples
+- Define
+- Ropensci
+  - https://github.com/ropensci/rrrpkg
+  - https://github.com/ropensci/unconf17/issues/5
 - Our examples
      - https://github.com/usepa/LakeTrophicModelling
      - https://github.com/usepa/Microcystinchla)
-- GitHub and Zenodo (Archive)
-
-![ghz](ghz.jpg)
+- Final home is GitHub and Zenodo
 
 ---
 
-# Packages to solve common problems
+# Packages that support our research
   - `lakemorpho`
   - `elevatr`
-  - `lakescape` (in development)
-  
-<img src="https://media3.giphy.com/media/ID4NXWnwuLnLq/200.webp#0-grid1" style="width: 80%; height: 80%; margin-left: 10%;"></img>
+  - lakescape (in development)
 ---
 
 # `lakemorpho`
@@ -142,7 +104,7 @@ image credit: N&Uumlst, Konkol, et al (2017), https://doi.org/10.1045/january201
 - [National Lake Morphometry](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B495CBAED-9BB9-49B4-80A7-1C91DE5FCA95%7D)
 - [Hollister and Milstead (2010)](http://dx.doi.org/10.1080/07438141.2010.504321)
 - [Hollister *et. al.* (2011)](http://dx.doi.org/10.1371/journal.pone.0025764)
-- [Hollister and Stachelek (In Review)]()
+- [Hollister and Stachelek (In Review)]
 ]
 
 .right-column[
@@ -155,15 +117,16 @@ plot(inputLM)
 ]
 
 
-
+<!--#########################################################################-->
 ---
 class: center, middle
 background-image: url('figure/lakemorpho_demo.png')
 background-position: 50% 50%
 
-<!-- # [lakemorpho: Demo](http://server.jwhollister.com:8787) -->
+# [lakemorpho: Demo](http://server.jwhollister.com:8787)
 
 
+<!--#########################################################################-->
 ---
 
 # `elevatr`
@@ -190,26 +153,15 @@ raster::plot(get_elev_raster(lake,z = 12))
 ```
 ]
 
-
+<!--#########################################################################-->
 ---
 class: center, middle
 background-image: url('figure/elevatr_demo.png')
 background-position: 50% 50%
 
-<!-- # [elevatr: Demo](http://server.jwhollister.com:8787) -->
+# [elevatr: Demo](http://server.jwhollister.com:8787)
 
----
 
-# `lakescape`
-
-- New effort with Bryan Milstead
-- Summarizes ancillary data for land area around lake
-  - Census (via `censusapi`)
-  - Landscover
-  - Impervious
-- Accepts arbitrary spatial data for "lakescape"
-- Based on `sf` and tidy by design
-- <https://github.com/willbmisled/lakescape>
 
 ---
 
