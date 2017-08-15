@@ -2,7 +2,7 @@
 title: "R packages as a reproducible framework for lake and cyanobacteria research"
 author: "Jeff Hollister"
 date: |
-  | 2017-06-21
+  | 2017-08-16
   | EPA R User Group Meeting
 output:
   xaringan::moon_reader:
