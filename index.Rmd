@@ -12,6 +12,8 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: true
+editor_options: 
+  chunk_output_type: console
 ---
 class: center, middle, inverse
 
@@ -28,7 +30,6 @@ class: center, middle, inverse
 # Who and what?
 
 ---
-
 
 # Who are we?
 
@@ -59,12 +60,15 @@ class: center, middle, inverse
   - New tooling
 - SSWR 4.01C: A Data Intensive Investigation of Temperature Impacts and Bloom Modelling
 
+![function](figure/cyano_model_function.jpg)
+
 ---
 class: center, middle, inverse
 
 # Packages
 
 ---
+
 # Why Packages
 
 - Useful structure
@@ -73,7 +77,7 @@ class: center, middle, inverse
   - CRAN
 - We are an R shop!
 
-**note: Details on creating packages next month from Karen Blocksum**
+<img src="https://media.giphy.com/media/l2JhtKtDWYNKdRpoA/giphy.gif" style="width: 80%; height: 80%; margin-left: 10%;"></img>
 
 ---
 # Research Compendia
@@ -91,9 +95,14 @@ class: center, middle, inverse
 ]
 
 .right-column[
-![glfig](g_l_figure.jpg)
+
+<img src="http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png" style="margin-left: 75px"></img>
+
+from Nüst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
 ]
+
 ---
+
 # Packages as Research Compendia
 - R, Data, and Vignettes folders
 - Other examples
@@ -103,7 +112,9 @@ class: center, middle, inverse
 - GitHub and Zenodo (Archive)
 
 ![ghz](ghz.jpg)
+
 ---
+
 # Packages to solve common problems
   - `lakemorpho`
   - `elevatr`
@@ -126,7 +137,7 @@ class: center, middle, inverse
 - [National Lake Morphometry](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B495CBAED-9BB9-49B4-80A7-1C91DE5FCA95%7D)
 - [Hollister and Milstead (2010)](http://dx.doi.org/10.1080/07438141.2010.504321)
 - [Hollister *et. al.* (2011)](http://dx.doi.org/10.1371/journal.pone.0025764)
-- [Hollister and Stachelek (In Review)]()
+- [Hollister and Stachelek (To Be Submitted)](https://github.com/usepa/lakemorpho_manuscript)
 ]
 
 .right-column[
@@ -145,8 +156,9 @@ class: center, middle
 background-image: url('figure/lakemorpho_demo.png')
 background-position: 50% 50%
 
-# [lakemorpho: Demo](http://server.jwhollister.com:8787)
+# lakemorpho::demo
 
+<!-- # [lakemorpho: Demo](http://server.jwhollister.com:8787) -->
 
 
 ---
@@ -181,7 +193,9 @@ class: center, middle
 background-image: url('figure/elevatr_demo.png')
 background-position: 50% 50%
 
-# [elevatr: Demo](http://server.jwhollister.com:8787)
+# elevatr::demo
+
+<!-- # [elevatr: Demo](http://server.jwhollister.com:8787) -->
 
 ---
 
@@ -211,5 +225,4 @@ github: [jhollist](https://github.com/jhollist) </br>
 
 Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
 ]
-
 
