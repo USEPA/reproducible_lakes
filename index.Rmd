@@ -2,7 +2,7 @@
 title: "R packages as a reproducible framework for lake and cyanobacteria research"
 author: "Jeff Hollister"
 date: |
-  | 2017-06-21
+  | 2017-08-16
   | EPA R User Group Meeting
 output:
   xaringan::moon_reader:
@@ -58,6 +58,7 @@ class: center, middle, inverse
   - Modelling 
   - Open Data
   - New tooling
+  - Adding field component
 - SSWR 4.01C: A Data Intensive Investigation of Temperature Impacts and Bloom Modelling
 
 ![function](figure/cyano_model_function.jpg)
@@ -88,7 +89,7 @@ class: center, middle, inverse
   - [Gentleman and Lang (2004)](http://biostats.bepress.com/bioconductor/paper2)
 - Part of
   - Reproducible Research
-  - Literate Programming
+  - Literate Programming (ala Donald Knuth)
 - ROpenSci efforts
   - [rrrpkg](https://github.com/ropensci/rrrpkg)
   - [ROpenSci unconf 2017 discussion](https://github.com/ropensci/unconf17/issues/5)
@@ -227,5 +228,4 @@ github: [jhollist](https://github.com/jhollist) </br>
 
 Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
 ]
-
 
