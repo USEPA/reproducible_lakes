@@ -105,10 +105,12 @@ from Nüst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
 
 # Packages as Research Compendia
 - R, Data, and Vignettes folders
-- Other examples
+- Other examples  
+    - [Carl Boettiger's template](https://github.com/cboettig/template)
+    - [Ben Marwick](https://github.com/benmarwick/Pleistocene-aged-stone-artefacts-from-Jerimalai--East-Timor)
 - Our examples
-     - https://github.com/usepa/LakeTrophicModelling
-     - https://github.com/usepa/Microcystinchla)
+    - https://github.com/usepa/LakeTrophicModelling
+    - https://github.com/usepa/Microcystinchla)
 - GitHub and Zenodo (Archive)
 
 ![ghz](ghz.jpg)
